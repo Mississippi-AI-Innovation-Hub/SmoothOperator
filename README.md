@@ -39,8 +39,8 @@ This PoC demonstrates that an AI-powered voice agent can handle routine triage c
 | Retry loop on unclear input | ✅ Demonstrated |
 | Confidence threshold fallback to human operator | ✅ Demonstrated |
 | Human-in-the-Loop feedback architecture | ✅ Demonstrated |
-| SMS follow-up via SNS | ⚠️ Implemented — sandbox restrictions prevented live delivery |
-| QuickSight real-time dashboard | ❌ Not completed within timeline |
+| SMS follow-up via SNS | ⚠️ Implemented — sandbox restrictions prevented live delivery for now |
+| QuickSight real-time dashboard | ❌ Not completed yet |
 
 ---
 
