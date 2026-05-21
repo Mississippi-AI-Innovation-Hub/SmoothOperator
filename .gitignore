@@ -1,0 +1,70 @@
+# Environment variables and secrets - NEVER commit these
+.env
+.env.local
+.env.production
+*.pem
+*.key
+*.cert
+
+# AWS credentials
+.aws/
+aws-credentials*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+pip-log.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Lambda deployment packages
+*.zip
+lambda-package/
+deployment-package/
+
+# Node (if any tooling is added)
+node_modules/
+npm-debug.log*
+
+# Logs
+*.log
+logs/
+
+# Local test outputs
+test-output/
+local-results/
+
+# Terraform state (if infra as code is added)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# CDK
+cdk.out/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
