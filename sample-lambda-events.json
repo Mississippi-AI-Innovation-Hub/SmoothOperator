@@ -1,0 +1,165 @@
+{
+  "test_events": {
+    "description": "Sample Lambda test event payloads for Hub-ITS-Triage-Agent. Use these directly in the AWS Lambda console Test tab.",
+    "format": "{ \"caller_input\": \"<intent_name_or_phrase>\" }",
+
+    "intent_based_events": {
+      "description": "These use intent names as passed by Amazon Connect after Lex classification.",
+      "ChildSupport": {
+        "caller_input": "ChildSupport"
+      },
+      "Unemployment": {
+        "caller_input": "Unemployment"
+      },
+      "DriversLicense": {
+        "caller_input": "DriversLicense"
+      },
+      "Medicaid": {
+        "caller_input": "Medicaid"
+      },
+      "FoodStamps": {
+        "caller_input": "FoodStamps"
+      },
+      "MentalHealth": {
+        "caller_input": "MentalHealth"
+      },
+      "ChildWelfare": {
+        "caller_input": "ChildWelfare"
+      },
+      "Insurance": {
+        "caller_input": "Insurance"
+      },
+      "Education": {
+        "caller_input": "Education"
+      },
+      "Veterans": {
+        "caller_input": "Veterans"
+      },
+      "PublicHealth": {
+        "caller_input": "PublicHealth"
+      },
+      "Transportation": {
+        "caller_input": "Transportation"
+      },
+      "GovernmentOffice": {
+        "caller_input": "GovernmentOffice"
+      },
+      "PoisonControl": {
+        "caller_input": "PoisonControl"
+      },
+      "HumanOperator": {
+        "caller_input": "HumanOperator"
+      },
+      "Emergency": {
+        "caller_input": "Emergency"
+      }
+    },
+
+    "natural_language_events": {
+      "description": "These use natural language phrases to test the AI routing logic directly.",
+      "child_support": {
+        "caller_input": "I need help with child support payments"
+      },
+      "unemployment": {
+        "caller_input": "I lost my job and need unemployment help"
+      },
+      "drivers_license": {
+        "caller_input": "I need to renew my drivers license"
+      },
+      "medicaid": {
+        "caller_input": "I need help with Medicaid"
+      },
+      "food_stamps": {
+        "caller_input": "I need help buying food for my family"
+      },
+      "mental_health": {
+        "caller_input": "I need mental health services"
+      },
+      "child_welfare": {
+        "caller_input": "I need to report a child abuse situation"
+      },
+      "insurance": {
+        "caller_input": "I have a complaint about my insurance company"
+      },
+      "education": {
+        "caller_input": "I have a question about my child's public school"
+      },
+      "veterans": {
+        "caller_input": "I am a veteran and need help with my benefits"
+      },
+      "public_health": {
+        "caller_input": "I need to get a birth certificate"
+      },
+      "transportation": {
+        "caller_input": "I need to report a road hazard on the highway"
+      },
+      "government_office": {
+        "caller_input": "I need to reach the Governor's office"
+      },
+      "poison_control": {
+        "caller_input": "Someone may have been poisoned"
+      },
+      "taxes": {
+        "caller_input": "I have a question about my state taxes"
+      },
+      "voting": {
+        "caller_input": "I need to register to vote"
+      },
+      "corrections": {
+        "caller_input": "I need information about an inmate"
+      },
+      "workers_comp": {
+        "caller_input": "I was injured at work and need workers compensation"
+      },
+      "fafsa": {
+        "caller_input": "I need help with federal financial aid"
+      },
+      "social_security": {
+        "caller_input": "I need help with Social Security benefits"
+      }
+    },
+
+    "edge_case_events": {
+      "description": "These test fallback, confidence thresholds, and error handling.",
+      "ambiguous_input": {
+        "caller_input": "I have no idea what I need help with"
+      },
+      "very_vague": {
+        "caller_input": "I need help"
+      },
+      "emergency_test": {
+        "caller_input": "this is an emergency someone is hurt"
+      },
+      "human_fallback": {
+        "caller_input": "I want to speak to a real person"
+      }
+    },
+
+    "connect_simulation_event": {
+      "description": "Simulates the full Amazon Connect event structure as sent to Lambda during a real call.",
+      "Details": {
+        "ContactData": {
+          "Attributes": {},
+          "AwsRegion": "us-west-2",
+          "Channel": "VOICE",
+          "ContactId": "sample-contact-id-12345",
+          "CustomerEndpoint": {
+            "Address": "+10000000000",
+            "Type": "TELEPHONE_NUMBER"
+          },
+          "InitiationMethod": "INBOUND",
+          "InstanceARN": "arn:aws:connect:us-west-2:ACCOUNT_ID:instance/INSTANCE_ID",
+          "LanguageCode": "en-US",
+          "SystemEndpoint": {
+            "Address": "+18667774471",
+            "Type": "TELEPHONE_NUMBER"
+          }
+        },
+        "Parameters": {
+          "caller_input": "ChildSupport"
+        }
+      },
+      "Name": "ContactFlowEvent"
+    }
+  }
+}
