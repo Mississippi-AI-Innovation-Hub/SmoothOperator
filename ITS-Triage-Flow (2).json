@@ -1,0 +1,670 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "978e5536-0207-48d7-b989-d41a5a04277e",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -720.8,
+      "y": -427.2
+    },
+    "ActionMetadata": {
+      "cb3206d9-53e7-4e38-9bf9-4f727a604b95": {
+        "position": {
+          "x": 2001.6,
+          "y": 285.6
+        }
+      },
+      "978e5536-0207-48d7-b989-d41a5a04277e": {
+        "position": {
+          "x": -696,
+          "y": -306.4
+        },
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "en-US"
+          }
+        },
+        "overrideConsoleVoice": true
+      },
+      "e3f6ce8a-ae23-4201-bc89-debf15f87238": {
+        "position": {
+          "x": 212.8,
+          "y": 243.2
+        },
+        "parameters": {
+          "TimeLimitSeconds": {
+            "unit": 1
+          }
+        },
+        "timeoutUnit": {
+          "display": "Seconds",
+          "value": "second"
+        }
+      },
+      "2ef68541-3033-4852-bf79-ed24ee1e0fb2": {
+        "position": {
+          "x": 1543.2,
+          "y": -312
+        },
+        "parameters": {
+          "ThirdPartyPhoneNumber": {
+            "countryCode": "",
+            "useDynamic": true
+          }
+        }
+      },
+      "f95b6a85-d40c-4e3c-aec7-633f971ab1cc": {
+        "position": {
+          "x": 1210.4,
+          "y": 207.2
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "375c5691-3feb-415f-b2fb-60991142ba62": {
+        "position": {
+          "x": 1440.8,
+          "y": 20
+        }
+      },
+      "1c96b1e4-53f3-465f-8271-446e20233a26": {
+        "position": {
+          "x": 1260.8,
+          "y": -291.2
+        },
+        "conditionMetadata": [
+          {
+            "id": "ee0be17f-d7ba-4a06-8461-6f332322d289",
+            "value": "1"
+          }
+        ]
+      },
+      "7b209be7-8913-425a-b854-8b5f0803b122": {
+        "position": {
+          "x": -478.4,
+          "y": -412
+        }
+      },
+      "a4978301-c7e0-4b99-aa37-159845e1fe77": {
+        "position": {
+          "x": 646.4,
+          "y": 774.4
+        }
+      },
+      "13f3a360-9d53-4d76-bba8-ef893e221a45": {
+        "position": {
+          "x": -47.2,
+          "y": 438.4
+        }
+      },
+      "880329d7-3176-4183-a533-6850a0c04da1": {
+        "position": {
+          "x": 876,
+          "y": 109.6
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "arn:aws:lambda:us-east-1:568318158080:function:ITS-Triage-Agent"
+          },
+          "LambdaInvocationAttributes": {
+            "caller_input": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "caller_input": true
+        }
+      },
+      "171a1a81-38e2-4c65-a103-2831b422c6d0": {
+        "position": {
+          "x": 362.4,
+          "y": -592
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "TestBotAlias",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "ITSTriageBot"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "ITSTriageBot",
+        "lexV2BotAliasName": "TestBotAlias",
+        "conditionMetadata": [
+          {
+            "id": "df8faf28-fa30-40a9-ae27-24938f5bf35c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Emergency"
+          },
+          {
+            "id": "48b58e72-2188-4351-8334-9d554664d683",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ChildSupport"
+          },
+          {
+            "id": "f8c8768a-849e-4a4d-a17b-b22478293d56",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Unemployment"
+          },
+          {
+            "id": "9d5e0d13-b487-4b76-938e-c72ffa550fcd",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "DriversLicense"
+          },
+          {
+            "id": "59dc414c-a0bd-41b7-b230-7b9e9981eb0d",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Medicaid"
+          },
+          {
+            "id": "ac684838-d748-4df5-9595-c6ae033ee278",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "HumanOperator"
+          },
+          {
+            "id": "e8a2aa36-d523-427f-b719-9a50fcef4293",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "FoodStamps"
+          },
+          {
+            "id": "51de12cf-94b0-4632-b79e-30cd890044f1",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "MentalHealth"
+          },
+          {
+            "id": "629c2ea4-54e7-4a2b-9aa4-092a0184f95c",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "ChildWelfare"
+          },
+          {
+            "id": "4bebc492-7483-4f48-aa49-59631854d29a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Education"
+          },
+          {
+            "id": "0470798c-e19d-4464-a98d-98c78a323631",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Veterans"
+          },
+          {
+            "id": "ef256bae-edcc-4f4c-898a-0867c5bcca5a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "PublicHealth"
+          },
+          {
+            "id": "078998c6-9ad5-4fad-b0cb-0d4251de338a",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Transportation"
+          },
+          {
+            "id": "ae2330e7-3a69-4269-9893-72f44bec296d",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "GovernmentOffice"
+          },
+          {
+            "id": "cac28719-cc88-4c71-bb10-5cb5e64be442",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "PoisonControl"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "ITS-Triage-Flow",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "cb3206d9-53e7-4e38-9bf9-4f727a604b95",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Danielle",
+        "TextToSpeechEngine": "Neural",
+        "TextToSpeechStyle": "None"
+      },
+      "Identifier": "978e5536-0207-48d7-b989-d41a5a04277e",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "7b209be7-8913-425a-b854-8b5f0803b122",
+        "Errors": [
+          {
+            "NextAction": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TimeLimitSeconds": "3"
+      },
+      "Identifier": "e3f6ce8a-ae23-4201-bc89-debf15f87238",
+      "Type": "Wait",
+      "Transitions": {
+        "NextAction": "880329d7-3176-4183-a533-6850a0c04da1",
+        "Conditions": [
+          {
+            "NextAction": "880329d7-3176-4183-a533-6850a0c04da1",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "WaitCompleted"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "880329d7-3176-4183-a533-6850a0c04da1",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ThirdPartyPhoneNumber": "$.External.phone_e164",
+        "ThirdPartyConnectionTimeLimitSeconds": "30",
+        "ContinueFlowExecution": "True"
+      },
+      "Identifier": "2ef68541-3033-4852-bf79-ed24ee1e0fb2",
+      "Type": "TransferParticipantToThirdParty",
+      "Transitions": {
+        "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+        "Errors": [
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "CallFailed"
+          },
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "ConnectionTimeLimitExceeded"
+          },
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "$.External.description"
+      },
+      "Identifier": "f95b6a85-d40c-4e3c-aec7-633f971ab1cc",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "1c96b1e4-53f3-465f-8271-446e20233a26",
+        "Errors": [
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Thank you for calling the Mississippi State Government Operator line. Have a wonderful day."
+      },
+      "Identifier": "375c5691-3feb-415f-b2fb-60991142ba62",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "cb3206d9-53e7-4e38-9bf9-4f727a604b95",
+        "Errors": [
+          {
+            "NextAction": "cb3206d9-53e7-4e38-9bf9-4f727a604b95",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Press 1 to be transferred to this agency now, or hang up to call them directly."
+      },
+      "Identifier": "1c96b1e4-53f3-465f-8271-446e20233a26",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+        "Conditions": [
+          {
+            "NextAction": "2ef68541-3033-4852-bf79-ed24ee1e0fb2",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Thank you for calling the Mississippi State Government Operator line. \nI'm here to help. Please describe what you need assistance with and I will connect you to the right Mississippi state agency. For example, you can say child support, unemployment, drivers license, or Medicaid."
+      },
+      "Identifier": "7b209be7-8913-425a-b854-8b5f0803b122",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "171a1a81-38e2-4c65-a103-2831b422c6d0",
+        "Errors": [
+          {
+            "NextAction": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "I apologize, I didn't quite catch that. Please try again and say something like child support, unemployment, drivers license, Medicaid, or say operator to speak with someone directly.\n\n"
+      },
+      "Identifier": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "171a1a81-38e2-4c65-a103-2831b422c6d0",
+        "Errors": [
+          {
+            "NextAction": "171a1a81-38e2-4c65-a103-2831b422c6d0",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "One moment please, while I connect you to the right department."
+      },
+      "Identifier": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e3f6ce8a-ae23-4201-bc89-debf15f87238",
+        "Errors": [
+          {
+            "NextAction": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:568318158080:function:ITS-Triage-Agent",
+        "InvocationTimeLimitSeconds": "8",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "caller_input": "$.Lex.IntentName"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "880329d7-3176-4183-a533-6850a0c04da1",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "f95b6a85-d40c-4e3c-aec7-633f971ab1cc",
+        "Errors": [
+          {
+            "NextAction": "375c5691-3feb-415f-b2fb-60991142ba62",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "I'm listening",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-east-1:568318158080:bot-alias/KFZGAR7ROQ/TSTALIASID"
+        }
+      },
+      "Identifier": "171a1a81-38e2-4c65-a103-2831b422c6d0",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+        "Conditions": [
+          {
+            "NextAction": "880329d7-3176-4183-a533-6850a0c04da1",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Emergency"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ChildSupport"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Unemployment"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DriversLicense"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Medicaid"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "HumanOperator"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "FoodStamps"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "MentalHealth"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ChildWelfare"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Education"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Veterans"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "PublicHealth"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Transportation"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "GovernmentOffice"
+              ]
+            }
+          },
+          {
+            "NextAction": "13f3a360-9d53-4d76-bba8-ef893e221a45",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "PoisonControl"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "a4978301-c7e0-4b99-aa37-159845e1fe77",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
