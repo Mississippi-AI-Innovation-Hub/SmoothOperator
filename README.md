@@ -3,7 +3,7 @@
 **Mississippi AI Innovation Hub | AWS Fellowship PoC**
 **Agency Partner:** Mississippi Department of Information Technology Services (ITS)
 **Developer:** Aditya (Adi) Singh — Mississippi State University, Computer Science
-**Fellowship Period:** April 6 – April 27, 2026
+
 
 ---
 
