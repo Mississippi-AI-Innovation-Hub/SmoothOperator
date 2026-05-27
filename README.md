@@ -244,9 +244,8 @@ MIT License — see [LICENSE](LICENSE) for full terms.
 ## Contributors
 
 **Aditya (Adi) Singh** — Mississippi State University, Computer Science
-- GitHub: [@operator2036](https://github.com/operator2036)
+- GitHub: [@researchingadi](https://github.com/researchingadi)
 - Email: as5142@msstate.edu
-- Phone: 662-497-0736
 
 **Fellowship Partners:** AWS Mississippi AI Innovation Hub | Mississippi Department of ITS | Mississippi Artificial Intelligence Network (MAIN)
 
