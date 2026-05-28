@@ -16,6 +16,10 @@ The project demonstrates feasibility within a limited prototype environment and 
 > **Try the live demo:** Call **+1 (866) 777-4471** and speak naturally — say what you need and the AI will route you to the correct Mississippi state agency.
 
 ---
+![Dashobard](ss1.png)
+![Dashboard](ss2.png)
+![Dashboard](ss3.png)
+
 
 ## Agency Problem
 
