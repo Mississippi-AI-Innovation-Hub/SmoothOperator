@@ -251,6 +251,6 @@ MIT License — see [LICENSE](LICENSE) for full terms.
 - GitHub: [@researchingadi](https://github.com/researchingadi)
 - Email: as5142@msstate.edu
 
-**Fellowship Partners:** AWS Mississippi AI Innovation Hub | Mississippi Department of ITS | Mississippi Artificial Intelligence Network (MAIN)
+**Fellowship Partners:** AWS | Mississippi Department of ITS | Mississippi Artificial Intelligence Network (MAIN)
 
-**Fellowship Partners:** AWS Mississippi AI Innovation Hub | Mississippi Department of ITS | Mississippi Artificial Intelligence Network (MAIN)
+**Fellowship Partners:** AWS | Mississippi Department of ITS | Mississippi Artificial Intelligence Network (MAIN)
